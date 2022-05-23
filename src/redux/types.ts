@@ -4,5 +4,12 @@ export interface userInfo {
     phoneNumber: string,
     email: string,
     password: string,
-    role: number
+    role: number,
+    avatar: string,
+}
+
+
+export interface sitemap {
+    currentLocation: string,
+    stack: string[];
 }

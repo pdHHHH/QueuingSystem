@@ -12,7 +12,7 @@ const notifications = [
   { user: "Hoàng Nguyễn Quốc Huy", content: "12h30 ngày 31/2/2020" },
   { user: "Võ Thị Lan Anh", content: "12h30 ngày 31/2/2020" },
   { user: "Võ Thị Lan Anh", content: "12h30 ngày 31/2/2020" },
-  { user: "Võ Thị Lan Anh", content: "12h30 ngày 31/2/2020" },
+  { user: "Hoàng Nguyễn Quốc Huy", content: "12h30 ngày 31/2/2020" },
   { user: "Võ Thị Lan Anh", content: "12h30 ngày 31/2/2020" },
   { user: "Võ Thị Lan Anh", content: "12h30 ngày 31/2/2020" },
 ];
@@ -54,6 +54,7 @@ const UserSection: React.FC = () => {
       <div className="hello-user">
         <span className="hello">Xin chào</span>
         <span className="user-name">Phạm Đức Huy</span>
+
       </div>
     </div>
   );
