@@ -12,7 +12,7 @@ const notifications = [
   { user: "Hoàng Nguyễn Quốc Huy", content: "12h30 ngày 31/2/2020" },
   { user: "Võ Thị Lan Anh", content: "12h30 ngày 31/2/2020" },
   { user: "Võ Thị Lan Anh", content: "12h30 ngày 31/2/2020" },
-  { user: "Hoàng Nguyễn Quốc Huy", content: "12h30 ngày 31/2/2020" },
+  { user: "Võ Thị Lan Anh", content: "12h30 ngày 31/2/2020" },
   { user: "Võ Thị Lan Anh", content: "12h30 ngày 31/2/2020" },
   { user: "Võ Thị Lan Anh", content: "12h30 ngày 31/2/2020" },
 ];

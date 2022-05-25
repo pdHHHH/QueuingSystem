@@ -42,7 +42,7 @@ const SummaryCard: React.FC<{
               })}
               value={5}
               maxValue={100}
-              // text={`${`percentage`}%`}
+              // text={`${`5`}%`}
             />
           </div>
         </CircularProgressbarWithChildren>
