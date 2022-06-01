@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
 import './detaildevice.scss';
-import { ReactComponent as AddIc } from '../../../../Assets/add-square.svg';
+import { ReactComponent as UpdateIc } from '../../../../Assets/update.svg';
 
 const DetailDevice: React.FC = () => {
   const navigate = useNavigate();
@@ -30,12 +30,12 @@ const DetailDevice: React.FC = () => {
       </div>
       <div
         className="app__device-layout__detail-device__float-btn"
-        onClick={() => navigate('/dashboard/device/list')}
+        onClick={() => navigate('/dashboard/device/modify')}
       >
         <span>
-          <AddIc />
+          <UpdateIc />
         </span>
-        <span>Quay lại</span>
+        <span>Cập nhật thiết bị</span>
       </div>
     </div>
   );
