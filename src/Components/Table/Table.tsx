@@ -17,7 +17,7 @@ export enum DeviceConnectionStatus {
 export enum QueueStatus {
   pending = "Đang chờ",
   used = "Đã sử dụng",
-  aborted = "Đã huỷ",
+  aborted = "Bỏ qua",
 }
 export enum Service {
   Heart = 'Khám tim mạch',
@@ -101,9 +101,9 @@ export interface IServiceRow {
 export interface IQueueRow {
   no: number;
   customerName: string;
-  serviceName: string;
-  grantTime: Date;
-  expireTime: Date;
+  serviceName: Service[];
+  grantTime: string;
+  expireTime: string;
   queueStatus: QueueStatus;
   provideBy: string;
   queueDetail: boolean;
@@ -219,15 +219,15 @@ const Table: React.FC<{ data: Array<any>; displayRow?: number }> = ({
                       <td>
                         <div className='row'>
                           <div
-                            className={`status-dot ${entry[1] === QueueStatus.pending && `active`
-                              } ${entry[1] === QueueStatus.used && `inactive`
+                            className={`status-dot ${entry[1] === QueueStatus.pending && `pending`
+                              } ${entry[1] === QueueStatus.used && `used`
                               } ${entry[1] === QueueStatus.aborted && `inactive`
                               }`}
                           ></div>
                           <span>
-                            {entry[1] === QueueStatus.pending && 'Đang hoạt động'}
-                            {entry[1] === QueueStatus.used && 'Hoàn thành'}
-                            {entry[1] === QueueStatus.aborted && 'Vắng'}
+                            {entry[1] === QueueStatus.pending && 'Đang chờ'}
+                            {entry[1] === QueueStatus.used && 'Đã sử dụng '}
+                            {entry[1] === QueueStatus.aborted && 'Bỏ qua'}
                           </span>
                         </div>
                       </td>

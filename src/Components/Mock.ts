@@ -4,7 +4,141 @@ import {
   IServiceRow,
   QueueStatus,
   Service,
+  IQueueRow,
 } from './Table/Table';
+export const queueTable: IQueueRow[] = [
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.pending,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.aborted,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+  {
+    no: 2010001,
+    customerName: 'Lê Huỳnh Ái Vân',
+    serviceName: [Service.Heart],
+    grantTime: '14:35 - 07/11/2022',
+    expireTime: '14:35 - 07/12/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Kiosk',
+    queueDetail: true,
+  },
+
+]
 
 export const deviceList: IDeviceRow[] = [
   {
@@ -208,7 +342,7 @@ export const deviceList: IDeviceRow[] = [
     displayUpdate: true,
   },
 
-  
+
 ];
 export const serviceDetailList: IServiceRow[] = [
   {
@@ -409,9 +543,9 @@ export enum EDeviceType {
   DisplayCounter = 'Display counter',
 }
 export enum EGraphDisplayType {
-    Day = "Ngày",
-    Week = "Tuần", 
-    Month = "Tháng"
+  Day = "Ngày",
+  Week = "Tuần",
+  Month = "Tháng"
 }
 export const grapthDisplayType = [EGraphDisplayType.Day, EGraphDisplayType.Week, EGraphDisplayType.Month]
 export const deviveType = [EDeviceType.Kiosk, EDeviceType.DisplayCounter]
