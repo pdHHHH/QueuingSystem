@@ -68,7 +68,7 @@ const NewService: React.FC = () => {
           onClick={() => navigate('/dashboard/service/list')}
         />
         <Button
-          text='Cập nhật'
+          text='Thêm dịch vụ'
           onClick={() => navigate('/dashboard/service/list')}
         />
       </div>
