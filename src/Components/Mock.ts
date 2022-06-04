@@ -5,7 +5,139 @@ import {
   QueueStatus,
   Service,
   IQueueRow,
+  IReportRow,
+  IUserRow,
 } from './Table/Table';
+
+export const userList: IUserRow[] = [
+  {
+    userName: 'phamduchuy2212',
+    fullName: 'Phạm Đức Huy',
+    phoneNumber: '0829891853',
+    email: 'huyducpham2000@gmail.com',
+    role: 'Kế toán',
+    isActivated: true,
+    userUpdate: true,
+  },
+  {
+    userName: 'phamduchuy2212',
+    fullName: 'Phạm Đức Huy',
+    phoneNumber: '0829891853',
+    email: 'huyducpham2000@gmail.com',
+    role: 'Kế toán',
+    isActivated: true,
+    userUpdate: true,
+  },
+  {
+    userName: 'phamduchuy2212',
+    fullName: 'Phạm Đức Huy',
+    phoneNumber: '0829891853',
+    email: 'huyducpham2000@gmail.com',
+    role: 'Kế toán',
+    isActivated: false,
+    userUpdate: true,
+  },
+  {
+    userName: 'phamduchuy2212',
+    fullName: 'Phạm Đức Huy',
+    phoneNumber: '0829891853',
+    email: 'huyducpham2000@gmail.com',
+    role: 'Kế toán',
+    isActivated: false,
+    userUpdate: true,
+  },
+  {
+    userName: 'phamduchuy2212',
+    fullName: 'Phạm Đức Huy',
+    phoneNumber: '0829891853',
+    email: 'huyducpham2000@gmail.com',
+    role: 'Kế toán',
+    isActivated: true,
+    userUpdate: true,
+  },
+  {
+    userName: 'phamduchuy2212',
+    fullName: 'Phạm Đức Huy',
+    phoneNumber: '0829891853',
+    email: 'huyducpham2000@gmail.com',
+    role: 'Kế toán',
+    isActivated: false,
+    userUpdate: true,
+  },
+  {
+    userName: 'phamduchuy2212',
+    fullName: 'Phạm Đức Huy',
+    phoneNumber: '0829891853',
+    email: 'huyducpham2000@gmail.com',
+    role: 'Kế toán',
+    isActivated: false,
+    userUpdate: true,
+  },
+  {
+    userName: 'phamduchuy2212',
+    fullName: 'Phạm Đức Huy',
+    phoneNumber: '0829891853',
+    email: 'huyducpham2000@gmail.com',
+    role: 'Kế toán',
+    isActivated: true,
+    userUpdate: true,
+  },
+  {
+    userName: 'phamduchuy2212',
+    fullName: 'Phạm Đức Huy',
+    phoneNumber: '0829891853',
+    email: 'huyducpham2000@gmail.com',
+    role: 'Kế toán',
+    isActivated: true,
+    userUpdate: true,
+  },
+]
+
+export const reportList: IReportRow[] = [
+  {
+    no: 2010001,
+    serviceName: [Service.Heart],
+    grantTime: '7:20 - 07/10/2022',
+    queueStatus: QueueStatus.pending,
+    provideBy: 'Kiosk'
+  },
+  {
+    no: 2010001,
+    serviceName: [Service.Heart],
+    grantTime: '7:20 - 07/10/2022',
+    queueStatus: QueueStatus.aborted,
+    provideBy: 'Kiosk'
+  },
+  {
+    no: 2010001,
+    serviceName: [Service.Heart],
+    grantTime: '7:20 - 07/10/2022',
+    queueStatus: QueueStatus.aborted,
+    provideBy: 'Kiosk'
+  },
+  {
+    no: 2010001,
+    serviceName: [Service.Heart],
+    grantTime: '7:20 - 07/10/2022',
+    queueStatus: QueueStatus.pending,
+    provideBy: 'Kiosk'
+  },
+  {
+    no: 2010001,
+    serviceName: [Service.Heart],
+    grantTime: '7:20 - 07/10/2022',
+    queueStatus: QueueStatus.aborted,
+    provideBy: 'Kiosk'
+  },
+  {
+    no: 2010001,
+    serviceName: [Service.Heart],
+    grantTime: '7:20 - 07/10/2022',
+    queueStatus: QueueStatus.used,
+    provideBy: 'Hệ thống'
+  },
+]
+
 export const queueTable: IQueueRow[] = [
   {
     no: 2010001,
@@ -341,9 +473,9 @@ export const deviceList: IDeviceRow[] = [
     displayDetail: true,
     displayUpdate: true,
   },
-
-
 ];
+
+
 export const serviceDetailList: IServiceRow[] = [
   {
     serviceId: 'KIO_01',
@@ -571,3 +703,4 @@ export const queueProvider = [
   EQueueProvider.Kiosk,
   EQueueProvider.System,
 ];
+

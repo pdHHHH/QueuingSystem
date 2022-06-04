@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router';
 import Button from '../../../Button/Button'
-import Textbox from '../../../Textbox/Textbox'
+import Textbox, {InputType} from '../../../Textbox/Textbox'
 import './newservice.scss'
 
 const NewService: React.FC = () => {
@@ -15,12 +15,13 @@ const NewService: React.FC = () => {
           <div className="row form-label">Thông tin dịch vụ</div>
           <div className='row'>
             <div className="col flex-1">
-              <Textbox label='Mã dịch vụ *' />
-              <Textbox label='Tên dịch vụ *' />
+              <Textbox label='Mã dịch vụ *' type={InputType.serviceId} />
+              <Textbox label='Tên dịch vụ *' type={InputType.serviceName} />
             </div>
             <div className='col flex-1'>
-              Mô tả
-              <textarea />
+              {/* Mô tả
+              <textarea /> */}
+              <Textbox label='Mô tả' type={InputType.field} />
             </div>
           </div>
         </div>

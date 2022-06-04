@@ -17,7 +17,7 @@ const ModifyDevice: React.FC = () => {
         <div className='row form-label'>Thông tin thiết bị</div>
         <div className='row'>
           <Textbox label='Mã thiết bị *' />
-          <Select label='Loại thiết bị' options={typeofDevice} />
+          <Select label='Loại thiết bị' options={typeofDevice} width={770}/>
         </div>
         <div className='row'>
           <Textbox label='Tên thiết bị *' />

@@ -5,6 +5,7 @@ import './table.scss';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import internal from 'stream';
 
 export enum DeviceActiveStatus {
   Active = 'Hoạt động',
@@ -44,6 +45,12 @@ export enum ColumnLabels {
   expireTime = 'Hạn sử dụng',
   queueStatus = 'Trạng thái',
   provideBy = 'Nguồn cấp',
+
+  userName = 'Tên đăng nhập',
+  fullName = 'Họ tên',
+  phoneNumber = 'Số điện thoại',
+  email = 'Email',
+  role = 'Vai trò',
 }
 
 export enum DisplayedColumns {
@@ -67,6 +74,14 @@ export enum DisplayedColumns {
   queueStatus = 'queueStatus',
   provideBy = 'provideBy',
   queueDetail = 'queueDetail',
+
+  userName = 'userName',
+  fullName = 'fullName',
+  phoneNumber = 'phoneNumber',
+  email = 'email',
+  role = 'role',
+
+  userUpdate = 'userUpdate'
 }
 
 // export enum ServiceColumns {
@@ -112,6 +127,24 @@ export interface IQueueRow {
 export interface IServiceQueue {
   no: number;
   queueStatus: QueueStatus;
+}
+
+export interface IReportRow{
+  no: number;
+  serviceName: Service[];
+  grantTime: string;
+  queueStatus: QueueStatus;
+  provideBy: string;
+}
+
+export interface IUserRow{
+  userName: string;
+  fullName: string;
+  phoneNumber: string;
+  email: string;
+  role: string;
+  isActivated: boolean;
+  userUpdate: boolean;
 }
 
 type T = keyof typeof ColumnLabels;
@@ -214,6 +247,14 @@ const Table: React.FC<{ data: Array<any>; displayRow?: number }> = ({
                       </td>
                     );
                   }
+                  if (entry[0] === DisplayedColumns.userUpdate) {
+                    return (
+                      <td>
+                        <Link to={'/dashboard/system/modify_account'}>Cập nhật</Link>
+                      </td>
+                    );
+                  }
+                  
                   if (entry[0] === DisplayedColumns.queueStatus) {
                     return (
                       <td>
@@ -240,6 +281,7 @@ const Table: React.FC<{ data: Array<any>; displayRow?: number }> = ({
                       </td>
                     );
                   }
+
                   return <td>{entry[1]}</td>;
                 })}
               </tr>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
 import Button from '../../../Button/Button';
-import Textbox from '../../../Textbox/Textbox';
+import Textbox, {InputType} from '../../../Textbox/Textbox';
 import './modifyservice.scss'
 
 const ModifyService: React.FC = () => {
@@ -19,8 +19,7 @@ const ModifyService: React.FC = () => {
               <Textbox label='Tên dịch vụ *' />
             </div>
             <div className='col flex-1'>
-              Mô tả
-              <textarea />
+              <Textbox label='Mô tả' type={InputType.field} />
             </div>
           </div>
         </div>
@@ -31,8 +30,8 @@ const ModifyService: React.FC = () => {
             <input type="checkbox" name='checkbox1' className='checkbox ' />
             <label htmlFor="checkbox1">
               Tăng từ động từ
-              <input type="text" value={'0001'}  className='input-text' readOnly/> đến
-              <input type="text" value={'9999'} className='input-text'readOnly/>
+              <input type="text" value={'0001'} className='input-text' readOnly /> đến
+              <input type="text" value={'9999'} className='input-text' readOnly />
             </label><br />
           </div>
 
@@ -40,7 +39,7 @@ const ModifyService: React.FC = () => {
             <input type="checkbox" name='checkbox2' className='checkbox ' />
             <label htmlFor="checkbox2">
               Prefix
-              <input type="text" value={'0001'} className='input-text'readOnly />
+              <input type="text" value={'0001'} className='input-text' readOnly />
             </label><br />
           </div>
 

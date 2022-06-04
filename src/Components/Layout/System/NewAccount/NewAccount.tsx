@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router';
 import Button from '../../../Button/Button';
 import Select from '../../../Select/Select';
-import Textbox from '../../../Textbox/Textbox';
+import Textbox, { InputType } from '../../../Textbox/Textbox';
 import './newaccount.scss';
 
 const typeofDevice = ['Kiosk', 'Display counter'];
@@ -14,16 +14,16 @@ const NewAccount: React.FC = () => {
       <div className='app__layout-system__new-account__container'>
         <div className='row form-label'>Thông tin tài khoản</div>
         <div className='row'>
-          <Textbox label='Họ tên *' />
-          <Textbox label='Tên đăng nhập *' />
+          <Textbox label='Họ tên *' type={InputType.fullName}/>
+          <Textbox label='Tên đăng nhập *' type={InputType.userName}/>
         </div>
         <div className='row'>
-          <Textbox label='Số điện thoại *' />
-          <Textbox label='Mật khẩu *' />
+          <Textbox label='Số điện thoại *' type={InputType.phoneNumber} />
+          <Textbox label='Mật khẩu *' type={InputType.password}/>
         </div>
         <div className='row'>
-          <Textbox label='Email *' />
-          <Textbox label='Nhập lại mật khẩu *' />
+          <Textbox label='Email *' type={InputType.email} />
+          <Textbox label='Nhập lại mật khẩu *' type={InputType.password} />
         </div>
         <div className='row'>
           <Select label='Vai trò *' options={typeofDevice} />
