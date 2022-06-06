@@ -51,6 +51,10 @@ export enum ColumnLabels {
   phoneNumber = 'Số điện thoại',
   email = 'Email',
   role = 'Vai trò',
+
+  roleName = 'Tên vai trò',
+  userNumber = 'Số người dùng',
+
 }
 
 export enum DisplayedColumns {
@@ -81,7 +85,12 @@ export enum DisplayedColumns {
   email = 'email',
   role = 'role',
 
-  userUpdate = 'userUpdate'
+  userUpdate = 'userUpdate',
+
+  roleName = 'roleName',
+  userNumber = 'userNumber',
+  roleUpdate = 'roleUpdate'
+
 }
 
 // export enum ServiceColumns {
@@ -145,6 +154,13 @@ export interface IUserRow{
   role: string;
   isActivated: boolean;
   userUpdate: boolean;
+}
+
+export interface IRoleRow{
+  roleName: string;
+  userNumber: number;
+  serviceDescribe: string;
+  roleUpdate: boolean;
 }
 
 type T = keyof typeof ColumnLabels;
@@ -251,6 +267,13 @@ const Table: React.FC<{ data: Array<any>; displayRow?: number }> = ({
                     return (
                       <td>
                         <Link to={'/dashboard/system/modify_account'}>Cập nhật</Link>
+                      </td>
+                    );
+                  }
+                  if (entry[0] === DisplayedColumns.roleUpdate) {
+                    return (
+                      <td>
+                        <Link to={'/dashboard/system/modify_role'}>Cập nhật</Link>
                       </td>
                     );
                   }

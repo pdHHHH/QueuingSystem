@@ -16,6 +16,7 @@
   width: inherit;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 
   .row {
     display: flex;

@@ -7,7 +7,35 @@ import {
   IQueueRow,
   IReportRow,
   IUserRow,
+  IRoleRow,
 } from './Table/Table';
+
+export const roleList: IRoleRow[] = [
+  {
+    roleName: 'Kế toán',
+    userNumber: 6,
+    serviceDescribe: 'Thực hiện nhiệm vụ thống kê số liệu và tổng hợp dữ liệu',
+    roleUpdate: true,
+  },
+  {
+    roleName: 'Bác sĩ',
+    userNumber: 6,
+    serviceDescribe: 'Thực hiện nhiệm vụ thống kê số liệu và tổng hợp dữ liệu',
+    roleUpdate: true,
+  },
+  {
+    roleName: 'Lễ tân',
+    userNumber: 6,
+    serviceDescribe: 'Thực hiện nhiệm vụ thống kê số liệu và tổng hợp dữ liệu',
+    roleUpdate: true,
+  },
+  {
+    roleName: 'Y tá',
+    userNumber: 6,
+    serviceDescribe: 'Thực hiện nhiệm vụ thống kê số liệu và tổng hợp dữ liệu',
+    roleUpdate: true,
+  },
+]
 
 export const userList: IUserRow[] = [
   {
