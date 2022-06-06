@@ -57,7 +57,7 @@ const ModifyRole: React.FC = () => {
           onClick={() => navigate('/dashboard/system/roles')}
         />
         <Button
-          text='Thêm vai trò'
+          text='Cập nhật'
           onClick={() => navigate('/dashboard/system/roles')}
         />
       </div>

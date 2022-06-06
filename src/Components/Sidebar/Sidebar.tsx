@@ -19,7 +19,7 @@ const items = [
   { name: 'Dịch vụ', icon: <ServiceIc />, path: 'service/list' },
   { name: 'Cấp số', icon: <NumberIc />, path: 'queue/list' },
   { name: 'Báo cáo', icon: <ReportIc />, path: 'report/create' },
-  { name: 'Cài đặt hệ thống', icon: <SettingIc />, icon2: <MoreIc />, path: 'system/roles' },
+  { name: 'Cài đặt hệ thống', icon: <SettingIc />, icon2: <MoreIc />, path: 'system/logs' },
 ];
 const Sidebar: React.FC = () => {
   const navigate = useNavigate();

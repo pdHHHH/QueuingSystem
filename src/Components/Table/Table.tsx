@@ -55,6 +55,9 @@ export enum ColumnLabels {
   roleName = 'Tên vai trò',
   userNumber = 'Số người dùng',
 
+  impactTime = 'Thời gian tác động',
+  ip = 'IP Thực hiện',
+  act = 'Thao tác thực hiện'
 }
 
 export enum DisplayedColumns {
@@ -89,7 +92,11 @@ export enum DisplayedColumns {
 
   roleName = 'roleName',
   userNumber = 'userNumber',
-  roleUpdate = 'roleUpdate'
+  roleUpdate = 'roleUpdate',
+
+  impactTime = 'impactTime',
+  ip = 'ip',
+  act = 'act',
 
 }
 
@@ -161,6 +168,13 @@ export interface IRoleRow{
   userNumber: number;
   serviceDescribe: string;
   roleUpdate: boolean;
+}
+
+export interface IAccountLogRow{
+  userName: string;
+  impactTime: string;
+  ip: string;
+  act: string;
 }
 
 type T = keyof typeof ColumnLabels;

@@ -8,7 +8,41 @@ import {
   IReportRow,
   IUserRow,
   IRoleRow,
+  IAccountLogRow,
 } from './Table/Table';
+
+export const accountLog: IAccountLogRow[] = [
+  {
+    userName: 'tuyetnguyen@12',
+    impactTime: '1/12/2022 15:12:17',
+    ip: '192.168.1.123',
+    act: 'Cập nhật thông tin dịch vụ DV_01',
+  },
+  {
+    userName: 'tuyetnguyen@12',
+    impactTime: '1/12/2022 15:12:17',
+    ip: '192.168.1.123',
+    act: 'Cập nhật thông tin dịch vụ DV_01',
+  },
+  {
+    userName: 'tuyetnguyen@12',
+    impactTime: '1/12/2022 15:12:17',
+    ip: '192.168.1.123',
+    act: 'Cập nhật thông tin dịch vụ DV_01',
+  },
+  {
+    userName: 'tuyetnguyen@12',
+    impactTime: '1/12/2022 15:12:17',
+    ip: '192.168.1.123',
+    act: 'Cập nhật thông tin dịch vụ DV_01',
+  },
+  {
+    userName: 'tuyetnguyen@12',
+    impactTime: '1/12/2022 15:12:17',
+    ip: '192.168.1.123',
+    act: 'Cập nhật thông tin dịch vụ DV_01',
+  },
+]
 
 export const roleList: IRoleRow[] = [
   {
