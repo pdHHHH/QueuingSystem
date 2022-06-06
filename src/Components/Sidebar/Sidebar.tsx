@@ -9,6 +9,7 @@ import { ReactComponent as NumberIc } from '../../Assets/number.svg';
 import { ReactComponent as ReportIc } from '../../Assets/report.svg';
 import { ReactComponent as SettingIc } from '../../Assets/setting.svg';
 import { ReactComponent as SignOutIc } from '../../Assets/signout.svg';
+import { ReactComponent as MoreIc } from '../../Assets/more.svg';
 import { useDispatch } from 'react-redux';
 import { logout } from '../../redux/userSlice';
 
@@ -18,7 +19,7 @@ const items = [
   { name: 'Dịch vụ', icon: <ServiceIc />, path: 'service/list' },
   { name: 'Cấp số', icon: <NumberIc />, path: 'queue/list' },
   { name: 'Báo cáo', icon: <ReportIc />, path: 'report/create'},
-  { name: 'Cài đặt hệ thống', icon: <SettingIc />, path: 'system/accounts' },
+  { name: 'Cài đặt hệ thống', icon: <SettingIc />, icon2: <MoreIc /> ,path: 'system/accounts' },
 ];
 const Sidebar: React.FC = () => {
   const navigate = useNavigate();
@@ -51,6 +52,9 @@ const Sidebar: React.FC = () => {
             >
               <div className='menu-item__icon'>{item.icon}</div>
               <div className='menu-item__name'>{item.name}</div>
+              <div className='menu-item__icon2'>
+                {item.icon2}
+              </div>
             </div>
           );
         })}

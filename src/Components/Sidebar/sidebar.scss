@@ -58,6 +58,14 @@
         align-items: center;
         justify-content: center;
       }
+      &__icon2 {
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // position: relative;
+      }
+
     }
     .selected {
       background-color: rgba($color: $orange, $alpha: 1);
