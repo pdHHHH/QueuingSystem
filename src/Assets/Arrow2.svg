@@ -1,8 +1,4 @@
-import React from "react";
-
-const Arrow = () => {
-  return (
-    <svg
+<svg
       width="6"
       height="7"
       viewBox="0 0 6 7"
@@ -16,7 +12,3 @@ const Arrow = () => {
         fill="#FF9138"
       />
     </svg>
-  );
-};
-
-export default Arrow;

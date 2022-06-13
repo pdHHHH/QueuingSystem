@@ -20,7 +20,7 @@ import { Line } from 'react-chartjs-2';
 
 import './dashboard.scss';
 import StatsPanel from './StatsPanel/StatsPanel';
-import Arrow from '../../../Assets/Arrow';
+import { ReactComponent as Arrow2Ic } from '../../../Assets/Arrow2.svg';
 import Select from '../../Select/Select';
 const selectOptions = ['Ngày', 'Tháng', 'Năm'];
 const Counter: React.FC = () => {
@@ -74,7 +74,7 @@ const Counter: React.FC = () => {
             <div className='row'>
               <div className='count'>4.221</div>
               <div className='diff raise'>
-                <Arrow />
+                <Arrow2Ic />
                 32,41%
               </div>
             </div>
@@ -90,7 +90,7 @@ const Counter: React.FC = () => {
               <div className='count'>3.721</div>
 
               <div className='diff drop'>
-                <Arrow />
+                <Arrow2Ic />
                 32,41%
               </div>
             </div>
@@ -105,7 +105,7 @@ const Counter: React.FC = () => {
             <div className='row'>
               <div className='count'>468</div>
               <div className='diff drop'>
-                <Arrow />
+                <Arrow2Ic />
                 32,41%
               </div>
             </div>
@@ -120,7 +120,7 @@ const Counter: React.FC = () => {
             <div className='row'>
               <div className='count'>32</div>
               <div className='diff raise'>
-                <Arrow />
+                <Arrow2Ic />
                 32,41%
               </div>
             </div>
